@@ -19,10 +19,11 @@
         }
     </p>
 
-    <p>
+    <div class="form-group">
         <label asp-for="Value"></label>
-        <input asp-for="Value" />
-    </p>
+        <input class="form-control"   asp-for="Value" />
+        <span asp-validation-for="Value"></span>
+    </div>
 
     <input type="submit" value="Search" />
 </form>
